@@ -34,6 +34,12 @@ def xor(a1, a2):
     if getattr(a2, "__iter__", None):
         return [int(typeConvert(_a2)^typeConvert(a1)) for _a2 in a2]
 
+def xor_s(*args):
+    _ = args[0]
+    for a in args[1:]:
+        _ = xor(_, a)
+    return _
+
 def intJoin(_list):
     return "".join([chr(_) for _ in _list])
 def join(_list):
