@@ -5,6 +5,13 @@ def _print(*args):
             f.write(arg)
             f.write("\n")
 
+
+
+def optionalIndex(_list, _index, default=None):
+    try:
+        return _list[_index]
+    except IndexError:
+        return default
 # From 04_XOR_Starter.py
 def xor(a1, a2):
     def typeConvert(o):
