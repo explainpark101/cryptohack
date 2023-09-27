@@ -1,5 +1,8 @@
 """
 x**2 === a (mod n)
+
+x is Quadratic Residue
+
 // we can use "Tonelli-Shanks algorithm" in modular square root.
 
 https://rkm0959.tistory.com/20
