@@ -14,7 +14,6 @@ def extended_gcd(a:int, b:int) -> tuple[int, int, int]:
     
     
 def gcd_default(a:int, b:int, _print=False) -> int:
-    
     if b == 0:
         return a
     q, r = divmod(a, b)
